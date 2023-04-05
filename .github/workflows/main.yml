@@ -23,7 +23,7 @@ jobs:
         run: npm ci
 
       - name: Build my App
-        run: npm run buikd
+        run: npm run build
       
       - name: Export
         run: npm run export
