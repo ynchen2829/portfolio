@@ -1,5 +1,6 @@
 import React from 'react';
 import NavBar from './nav';
+import Image from 'next/image';
 
 const photos = [
   { src: '/Home/grad.jpeg', caption: 'Graduation', url:'/photo/graduation' },
@@ -20,7 +21,7 @@ function Photo(){
         <div className="columns-3xs gap-4">
           {photos.map((photo) => (
             <div key={photo.src} className="group relative mb-4">
-              <img
+              <Image
                 src={photo.src}
                 alt={photo.caption}
                 className="w-full h-auto"

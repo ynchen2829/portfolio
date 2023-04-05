@@ -2,6 +2,7 @@ import fs from 'fs';
 import { useRouter } from 'next/router';
 import path from 'path';
 import Nav from '../nav';
+import Image from 'next/image';
 
 function Gallery(photoList:any) {
   const router = useRouter();
@@ -19,7 +20,7 @@ function Gallery(photoList:any) {
         <div className="columns-2 gap-4">
           {photoList.photoList.map((photo:any) => (
             <div key={photo} className="group relative mb-4">
-              <img src={`${name}/${photo}`} alt="" className="w-full h-auto" />
+              <Image src={`${name}/${photo}`} alt="" className="w-full h-auto" />
               {/* this is for showing the name of the photo when hovered */}
               {/* <div className="opacity-0 group-hover:opacity-100 absolute inset-0 flex justify-center items-center bg-black bg-opacity-75 transition-opacity">
                 <p className="text-white text-lg">{photo}</p>

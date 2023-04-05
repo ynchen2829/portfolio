@@ -8,12 +8,12 @@ function Book(){
         <div className="bg-gray-100 px-4 flex flex-col justify-center items-center">
         <h1 className="text-5xl max-w-5xl mx-auto my-10 font-bold text-gray-800">Woo Hoo! You Are Here!</h1>
         <p className="text-xl max-w-5xl mx-auto font-italic text-gray-600 mt-4">
-        Hello, I'm Yinuo (pronounced as ee-no). I've been passionate about photography since 2015, when I received my first camera. 
+        Hello, I&apos;m Yinuo (pronounced as ee-no). I&apos;ve been passionate about photography since 2015, when I received my first camera. 
         I pursued my passion and earned a degree in Radio-Television-Film from UT. 
         </p>
         <p className="text-xl max-w-5xl mx-auto font-italic text-gray-600 mt-4 mb-10">
             Over time, I developed a particular interest in portrait photography, which brings us to the present. 
-            So let's talk more about your photo shoot!   
+            So let&apos;s talk more about your photo shoot!   
         </p> 
         </div>
 
@@ -62,7 +62,7 @@ function Book(){
                 <ul className="list-disc my-2">
                 <li>60 minutes shooting time, unlimited locations.</li>
                 <li>50-70 color graded photos.</li>
-                <li>Minimum of 8 fine edits (edit on messy background, clothes wrinkles, facial features, anything you don't like!)</li>
+                <li>Minimum of 8 fine edits (edit on messy background, clothes wrinkles, facial features, anything you don&apos;t like!)</li>
                 </ul>
                 <p>Every hour on top of the shoot is +$30, with at least additional 20 color graded photos and 3 fine edits per hour.</p>
             </div>
@@ -73,7 +73,7 @@ function Book(){
                 <ul className="list-disc my-2">
                 <li>60 minutes shooting time, unlimited locations.</li>
                 <li>Minimum 30 color graded photos per person.</li>
-                <li>Minimum of 5 fine edits per person (edit on messy background, clothes wrinkles, facial features, anything you don't like!)</li>
+                <li>Minimum of 5 fine edits per person (edit on messy background, clothes wrinkles, facial features, anything you don&apos;t like!)</li>
                 </ul>
                 <p>Every hour on top of the shoot is +$20, with at least additional 10 color graded photos and 2 fine edits per hour per person </p>
             </div>
@@ -84,7 +84,7 @@ function Book(){
                 <ul className="list-disc my-2">
                 <li>60 minutes shooting time, 2 locations.</li>
                 <li>Minimum 30 color graded photos per person.</li>
-                <li>Minimum of 5 fine edits per person (edit on messy background, clothes wrinkles, facial features, anything you don't like!)</li>
+                <li>Minimum of 5 fine edits per person (edit on messy background, clothes wrinkles, facial features, anything you don&apos;t like!)</li>
                 </ul>
                 <p>Every hour on top of the shoot is +$20, with at least additional 10 color graded photos and 2 fine edits per hour per person </p>
 
@@ -95,7 +95,7 @@ function Book(){
                 <p className="text-gray-700 dark:text-gray-400 mb-5"> 
                 Please note that Calendly can only show 30 minute sessions, but we do shootings of at least 1 hr!
                 This is only to book for the day, and details are for discussion during our initial contact.
-                (Don't forget to leave your weChat ID if you are using weChat)
+                (Don&apos;t forget to leave your weChat ID if you are using weChat)
                 </p>
                 <div className="max-w-screen mx-auto">
                 <iframe
