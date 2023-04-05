@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 
 function Hero() {
   return (
@@ -13,9 +14,9 @@ function Hero() {
       <p className="text-xl sm:text-2xl lg:text-3xl font-italic text-center max-w-prose mb-10 px-4">
         Full stack developer and photographer. 
       </p>
-        <a href="/photo" className="bg-gray-200 hover:bg-white py-3 px-8 rounded-lg text-gray-800 font-medium transition-all duration-200 ease-in-out">
+        <Link href="/photo" className="bg-gray-200 hover:bg-white py-3 px-8 rounded-lg text-gray-800 font-medium transition-all duration-200 ease-in-out">
           View Photo Portfolio
-        </a>
+        </Link>
     </div>
   );
 }
