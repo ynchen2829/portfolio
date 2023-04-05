@@ -22,6 +22,8 @@ function Photo(){
           {photos.map((photo) => (
             <div key={photo.src} className="group relative mb-4">
               <Image
+                width ="300" 
+                height="500"
                 src={photo.src}
                 alt={photo.caption}
                 className="w-full h-auto"
