@@ -20,7 +20,7 @@ function Gallery(photoList:any) {
         <div className="columns-2 gap-4">
           {photoList.photoList.map((photo:any) => (
             <div key={photo} className="group relative mb-4">
-              <Image width="300" height="500" src={`${name}/${photo}`} alt="" className="w-full h-auto" />
+              <img width={300} height={500} src={`/photo/${name}/${photo}`} alt="" className="w-full h-auto" />
               {/* this is for showing the name of the photo when hovered */}
               {/* <div className="opacity-0 group-hover:opacity-100 absolute inset-0 flex justify-center items-center bg-black bg-opacity-75 transition-opacity">
                 <p className="text-white text-lg">{photo}</p>
