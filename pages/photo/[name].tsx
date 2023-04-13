@@ -2,7 +2,6 @@ import fs from 'fs';
 import { useRouter } from 'next/router';
 import path from 'path';
 import Nav from '../nav';
-import Image from 'next/image';
 
 function Gallery(photoList:any) {
   const router = useRouter();
@@ -17,7 +16,7 @@ function Gallery(photoList:any) {
         </a>
       </div>
       <main className="max-w-5xl mx-auto px-4 py-8">
-        <div className="columns-2 gap-4">
+        <div className="columns-2 gap-6">
           {photoList.photoList.map((photo:any) => (
             <div key={photo} className="group relative mb-4">
               <img width={300} height={500} src={`/photo/${name}/${photo}`} alt="" className="w-full h-auto" />
@@ -51,7 +50,7 @@ export const getStaticPaths = async () => {
   return {
       paths: [{params: { name: 'engagement' }},
               {params: { name: 'food' }},
-              {params: { name: 'graduation' }},
+              // {params: { name: 'graduation' }},
               {params: { name: 'through_my_eyes' }},
               {params: { name: 'travel' }},
              ], //indicates that no page needs be created at build time

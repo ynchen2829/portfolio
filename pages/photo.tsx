@@ -13,6 +13,7 @@ const photos = [
 
 function Photo(){
   return (
+    
     <div className="min-h-screen">
       <NavBar></NavBar>
       <div className="fixed bottom-0 right-0 mb-8 mr-8">
