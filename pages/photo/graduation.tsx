@@ -35,9 +35,9 @@ export default function graduation() {
       </Head>
       <div className="bg-gradient-to-b from-amber-800 to-amber-600 text-white max-w-screen mx-auto flex flex-col md:flex-row items-center md:items-stretch">
         <div className="w-1/2 ml-40 my-10">
-            <h1 className="text-4xl font-bold mb-4">Let's Celebrate!</h1>
+            <h1 className="text-4xl font-bold mb-4">Let&apos;s Celebrate!</h1>
             <p className="text-2xl mb-4 leading-loose whitespace-pre-wrap">
-            You did it! Hook 'em horns! 🤘🎓<br className='mt-2'/>
+            You did it! Hook &apos;em horns! 🤘🎓<br className='mt-2'/>
             From the Tower to the Main Mall, <br className='mt-2'/>
             You have made unforgettable memories on campus,<br className='mt-2'/>
             Those memories are deserved to be recorded professionally!
