@@ -27,23 +27,23 @@ const photos = [
 export default function graduation() {
     
   return (
-    <div className='bg-orange-100'>
+    <div className='bg-orange-100 w-full'>
         <Nav></Nav>
       <Head>
         <title>Graduation Portraits</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="bg-gradient-to-b from-amber-800 to-amber-600 text-white max-w-screen mx-auto flex flex-col md:flex-row items-center md:items-stretch">
-        <div className="w-1/2 ml-40 my-10">
-            <h1 className="text-4xl font-bold mb-4">Let&apos;s Celebrate!</h1>
-            <p className="text-2xl mb-4 leading-loose whitespace-pre-wrap">
+        <div className="sm:w-full lg:w-1/2 lg:ml-40 sm:ml-5 my-10">
+            <h1 className="lg:text-4xl sm:text-2xl font-bold lg:mb-4">Let&apos;s Celebrate!</h1>
+            <p className="lg:text-2xl sm:text-2xl lg:mb-4 leading-loose whitespace-pre-wrap">
             You did it! Hook &apos;em horns! 🤘🎓<br className='mt-2'/>
             From the Tower to the Main Mall, <br className='mt-2'/>
             You have made unforgettable memories on campus,<br className='mt-2'/>
             Those memories are deserved to be recorded professionally!
             </p>
         </div>
-        <div className="w-1/2 ">
+        <div className="sm:w-full lg:w-1/2  ">
             <img src={photos[0].src} alt="Image Description" className="w-full h-auto"/>
         </div>
         </div>
@@ -56,11 +56,11 @@ export default function graduation() {
         {/* photo gallery */}
         <div className='max-w-screen flex-col md:flex-row items-center md:items-stretch bg-orange-100'>
         <div>
-            <div className="pt-10 px-5 flex items-center justify-center w-3/4 m-auto"> 
-                <Carousel autoPlay >
+            <div className="pt-10 px-5 flex items-center justify-center lg:max-w-3/4 sm:max-w-xs m-auto"> 
+                <Carousel autoPlay>
                 {photosG.map((photo,index) => (
                 <div key={index}>
-                    <img src={photo.src} className="max-h-[75vh] hover:max-h-screen object-contain hover:object-fill"/>
+                    <img src={photo.src} className="max-h-[75vh] sm:max-w-xs lg:max-w-full object-contain"/>
                 </div>
                 ))}
                 </Carousel>
@@ -77,14 +77,14 @@ export default function graduation() {
         </div>
 
         <div className="bg-gradient-to-b from-amber-700 via-amber-700 to-orange-100 text-white max-w-screen mx-auto flex flex-col md:flex-row items-center md:items-stretch">
-        <div className="w-1/2 ">
+        <div className="sm:w-full lg:w-1/2  ">
             <img src={photos[1].src} alt="Image Description" className="w-full h-auto"/>
         </div>
-        <div className="w-1/2 ml-40 my-10 mr-20 leading-10">
-            <h1 className="text-5xl font-bold mb-4 mt-20">Individual Package</h1>
-            <div className="text-white text-xl">
+        <div className="sm:w-full lg:w-1/2  sm: m-auto lg:ml-40 sm:my-10 lg:mr-20 leading-10">
+            <h1 className="lg:text-5xl sm:text-3xl font-bold lg:mb-4  lg:mt-20 sm:m-auto">Individual Package</h1>
+            <div className="text-white lg:text-xl sm:text-md">
                 <p>Base Rate $100, includes</p>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-10">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-4 lg:my-10 sm:m-auto">
                     <div className="relative mb-12 px-3 lg:mb-0">
                         <div className="mb-2 flex justify-center">
                         <span className="text-primary">
@@ -97,7 +97,7 @@ export default function graduation() {
                         </svg>
                         </span>
                         </div>
-                        <h5 className="mb-6 font-bold text-primary">60</h5>
+                        <h5 className="lg:mb-6 sm:m-auto font-bold text-primary">60</h5>
                         <h6 className="mb-0 font-normal dark:text-neutral-50">Minutes</h6>
                         <div
                         className="absolute right-0 top-0 hidden h-full min-h-[1em] w-px self-stretch border-t-0 bg-gradient-to-tr from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100 lg:block"></div>
@@ -173,7 +173,7 @@ export default function graduation() {
         </div>
 
         <div className="bg-gradient-to-b from-orange-100 via-orange-300 to-orange-400 text-amber-800 max-w-screen mx-auto flex flex-col md:flex-row items-center md:items-stretch">
-        <div className="w-1/2 mr-20 my-10 ml-20 leading-10">
+        <div className="sm:w-full lg:w-1/2  sm:m-auto lg:mr-20 lg:my-10 lg:ml-20 leading-10">
             <h1 className="text-5xl font-bold mb-4">Group Package</h1>
             <div className=" text-xl">
                 <p>Base Rate $100, with each additional person +$50</p>
@@ -254,7 +254,7 @@ export default function graduation() {
                 <p>Every additional hour, you will receive at least <b>10</b> color graded photos and 2 fine edits per person.</p>
             </div>
         </div>
-        <div className="w-1/2">
+        <div className="sm:w-full lg:w-1/2">
             <img src={photos[2].src} alt="Image Description" className="w-full h-auto"/>
         </div>
         </div>
@@ -270,35 +270,35 @@ export default function graduation() {
             <h2 className="text-3xl font-bold text-amber-800 mb-8">Booking Timeline</h2>
             
             {/* timeline component  */}
-            <ol className="relative border-l border-amber-200 dark:border-amber-700">                  
+            <ol className="relative border-l border-orange-400 dark:border-amber-700">                  
                 <li className="mb-10 ml-4">
-                    <div className="absolute w-3 h-3 bg-amber-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-amber-900 dark:bg-amber-700"></div>
-                    <time className="mb-1 text-sm font-normal leading-none text-amber-600 dark:text-amber-500">Day of Booking</time>
+                    <div className="absolute w-3 h-3 bg-orange-400 rounded-full mt-1.5 -left-1.5 border border-white dark:border-amber-900 dark:bg-amber-700"></div>
+                    <time className="mb-1 text-sm font-normal leading-none text-amber-700 dark:text-amber-500">Day of Booking</time>
                     <h3 className="text-lg font-semibold text-amber-900 dark:text-white">Initial Contact</h3>
-                    <p className="mb-4 text-base font-normal text-amber-500 dark:text-amber-600">Within 24 hour of booking, you will be contacted via email (for weChat users, please leave your weChat as well)</p>
+                    <p className="mb-4 text-base font-normal text-amber-700 dark:text-amber-700">Within 24 hour of booking, you will be contacted via email (for weChat users, please leave your weChat as well)</p>
                 </li>
                 <li className="mb-10 ml-4">
-                    <div className="absolute w-3 h-3 bg-amber-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-amber-900 dark:bg-amber-700"></div>
-                    <time className="mb-1 text-sm font-normal leading-none text-amber-600 dark:text-amber-500">72 Hour Within Booking</time>
+                    <div className="absolute w-3 h-3 bg-orange-400 rounded-full mt-1.5 -left-1.5 border border-white dark:border-amber-900 dark:bg-amber-700"></div>
+                    <time className="mb-1 text-sm font-normal leading-none text-amber-700 dark:text-amber-700">72 Hour Within Booking</time>
                     <h3 className="text-lg font-semibold text-amber-900 dark:text-white">Customized Shooting Plan</h3>
-                    <p className="text-base font-normal text-amber-500 dark:text-amber-600">
+                    <p className="text-base font-normal text-amber-700 dark:text-amber-700">
                         After we establish the initial contact, we can get to know each other, and talk details about the shooting. 
                         Here we will secure your session, finalize the shooting plan, and pay the <b>deposit of $50 per person </b>.</p>
                 </li>
                 <li className="mb-10 ml-4">
-                    <div className="absolute w-3 h-3 bg-amber-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-amber-900 dark:bg-amber-700"></div>
-                    <time className="mb-1 text-sm font-normal leading-none text-amber-600 dark:text-amber-500">Day of Shooting</time>
+                    <div className="absolute w-3 h-3 bg-orange-400 rounded-full mt-1.5 -left-1.5 border border-white dark:border-amber-900 dark:bg-amber-700"></div>
+                    <time className="mb-1 text-sm font-normal leading-none text-amber-700 dark:text-amber-700">Day of Shooting</time>
                     <h3 className="text-lg font-semibold text-amber-900 dark:text-white">Official Photo Shoot</h3>
-                    <p className="text-base font-normal text-amber-500 dark:text-amber-600">
+                    <p className="text-base font-normal text-amber-700 dark:text-amber-700">
                         Get Ready to have a blast with me! For my ladies, please bring comfortable shoes to walk on campus.
                         After the shooting, we will also select the photos you like together!
                         </p>
                 </li>
                 <li className="mb-10 ml-4">
-                    <div className="absolute w-3 h-3 bg-amber-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-amber-900 dark:bg-amber-700"></div>
-                    <time className="mb-1 text-sm font-normal leading-none text-amber-600 dark:text-amber-500">2 Weeks within Shooting</time>
+                    <div className="absolute w-3 h-3 bg-orange-400 rounded-full mt-1.5 -left-1.5 border border-white dark:border-amber-900 dark:bg-amber-700"></div>
+                    <time className="mb-1 text-sm font-normal leading-none text-amber-700 dark:text-amber-700">2 Weeks within Shooting</time>
                     <h3 className="text-lg font-semibold text-amber-900 dark:text-white">Photo Delivery</h3>
-                    <p className="text-base font-normal text-amber-500 dark:text-amber-600">
+                    <p className="text-base font-normal text-amber-700 dark:text-amber-700">
                         I deliver edited photos within two weeks from the date of shooting, which depends on my workload for the week. 
                         After the photos are delivered, you will have another two weeks and <b>two chances for the photos to be re-edited</b> as well! </p>
                 </li>
