@@ -69,7 +69,7 @@ function developer(){
                         </div>
                     </div>
 
-                    <div className="mx-auto flex justify-center grid-cols-3 my-12">
+                    <div className="mx-auto flex justify-center grid-cols-3 mb-28">
                         <div className="flex-1 p-4 ml-4 col-span-1 w-1/2">
                             <h2 className="text-2xl font-mono mb-5"> 
                                 New Year Gala Check-in</h2>
@@ -101,23 +101,52 @@ function developer(){
                     </div>
 
                     <div className="mx-auto flex justify-center grid-cols-3 mb-28 p-10">
-                        <div className="flex-1 h-60 col-span-2">
-                            <div className="h-min overflow-hidden rounded-md">
-                                <img className="hover:scale-110 transition-all duration-500 cursor-pointer" src="/portfolio/check-out.png" alt="" />
+                        <div className="flex-1 h-80 col-span-2">
+                        <div className="carousel w-full">
+                            <div id="slide1" className="carousel-item relative w-full">
+                                <img src="/portfolio/debrief.png" className="w-full" />
+                                <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                                <a href="#slide3" className="btn btn-circle">❮</a> 
+                                <a href="#slide2" className="btn btn-circle">❯</a>
+                                </div>
+                            </div> 
+                            <div id="slide2" className="carousel-item relative w-full">
+                                <img src="/portfolio/debrief-1.png" className="w-full" />
+                                <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                                <a href="#slide1" className="btn btn-circle">❮</a> 
+                                <a href="#slide3" className="btn btn-circle">❯</a>
+                                </div>
+                            </div> 
+                            <div id="slide3" className="carousel-item relative w-full">
+                                <img src="/portfolio/debrief-2.png" className="w-full" />
+                                <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                                <a href="#slide2" className="btn btn-circle">❮</a> 
+                                <a href="#slide1" className="btn btn-circle">❯</a>
+                                </div>
+                            </div> 
                             </div>
                         </div>
                         <div className="flex-1 h-60 col-span-1 w-1/2 ml-8">
                             <h2 className="text-2xl font-mon mb-4"> 
-                                Hardware Checkout Simulation</h2>
+                                DeBrief</h2>
                             <p className="text-lg text-gray-200 mb-5">
-                            Constructed a web application for a HaaS system to simulate purchasing hardware resources.                            </p>
+                            Website that simplifies bills that are introduced in government from sophisticated legal language to everyday casual speech, in order to make civic matters more accessible for all.
+                           </p>
+                           <ul className="space-y-1 text-slate-400 list-disc list-inside mb-5">
+                                <li>
+                                Filters and Search
+                                </li>
+                                <li>
+                                Periodic web scrapping to get new bills
+                                </li>
+                            </ul>
                             <p className="font-mono mb-5 font-semibold">
-                                React.js Python Flask MongoDB Heroku
+                                Next.js Python OpenAI(API) Azure beautiful-soup
                             </p>
                         </div>
                     </div>
                     
-                    <div className="mx-auto flex justify-center grid-cols-3 my-12">
+                    <div className="mx-auto flex justify-center grid-cols-3 my-28">
                         <div className="flex-1 p-4 ml-4 col-span-1 w-1/2">
                             <h2 className="text-2xl font-mono mb-5"> 
                                 Wampus.fyi (WIP)</h2>
@@ -142,6 +171,23 @@ function developer(){
                             <div className="h-min overflow-hidden rounded-md">
                                 <img className="hover:scale-110 transition-all duration-500 cursor-pointer" src="/portfolio/wampus.png" alt="" />
                             </div>
+                        </div>
+                    </div>
+
+                    <div className="mx-auto flex justify-center grid-cols-3 mb-28 p-10">
+                        <div className="flex-1 h-60 col-span-2">
+                            <div className="h-min overflow-hidden rounded-md">
+                                <img className="hover:scale-110 transition-all duration-500 cursor-pointer" src="/portfolio/check-out.png" alt="" />
+                            </div>
+                        </div>
+                        <div className="flex-1 h-60 col-span-1 w-1/2 ml-8">
+                            <h2 className="text-2xl font-mono mb-4"> 
+                                Hardware Checkout Simulation</h2>
+                            <p className="text-lg text-gray-200 mb-5">
+                            Constructed a web application for a HaaS system to simulate purchasing hardware resources.                            </p>
+                            <p className="font-mono mb-5 font-semibold">
+                                React.js Python Flask MongoDB Heroku
+                            </p>
                         </div>
                     </div>
 
