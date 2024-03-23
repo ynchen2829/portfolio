@@ -1,6 +1,5 @@
 import React from 'react';
-import NavBar from './nav';
-import Image from 'next/image';
+import NavBar from './components/photo_nav';
 
 const photos = [
   { src: '/Home/grad.jpeg', caption: 'Graduation', url:'/photo/graduation' },

@@ -1,7 +1,7 @@
 import fs from 'fs';
 import { useRouter } from 'next/router';
 import path from 'path';
-import Nav from '../nav';
+import Nav from '../components/photo_nav';
 
 function Gallery(photoList:any) {
   const router = useRouter();

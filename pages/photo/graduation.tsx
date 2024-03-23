@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"
-import Nav from '../nav';
+import Nav from '../components/photo_nav';
 
 const photosG = [
   { src: '/photo/graduation/IMG_05-min.jpg', caption: 'Senior portrait 2' },
