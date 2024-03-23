@@ -14,7 +14,7 @@ function developer(){
             <div className="mx-auto max-w-6xl">
                     <div className="flex justify-between items-center h-16">
                         <div className="flex px-6 md:px-0">
-                            <a href="/" className="py-5 hover:text-gray-400">Home</a>
+                            <Link href="/" className="py-5 hover:text-gray-400">Home</Link>
                         </div>
                         <div className="flex">
                             <div className="flex items-center space-x-1">
