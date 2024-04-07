@@ -35,7 +35,7 @@ function developer(){
                             My name is Yinuo, I just graduated from the University of Texas in December 2023 with degrees in Computer Engineering and Film.👩‍🔬
                         </p>
                         <p className="mb-6 text-lg">
-                            In short, I make websites: front to back, UI to database. I also like exploring cloud technologies and distributed systems as an 
+                            In short, I make websites: front to back, UI to database. I also like exploring ML technologies and distributed systems as an 
                             extension from my college interests.
                         </p>
                         {/* <Link href={'/Yinuo Chen Resume.pdf'} target="_blank"
